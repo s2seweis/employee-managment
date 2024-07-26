@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitarbeiter anzeigen</title>
+    <link rel="stylesheet" href="../css/mitarbeiter.css">
+</head>
+<body>
+    
+    <form action="../php/mitarbeiterAnzeigen.php" method="post">
+        <label for="standort">Standort</label>
+        <select name="standort" id="standort">
+            <option value="Saarbrücken">Saarbrücken</option>
+            <option value="Heidelberg">Heidelberg</option>
+            <option value="Marburg">Marburg</option>
+        </select>
+        <input type="text" name="auswahl" id="auswahl" value="standort" hidden>
+        <input type="submit" value="Nach Standort selektieren" >
+    </form>
+
+    <form action="../php/mitarbeiterAnzeigen.php" method="post">
+        <label for="abteilung">Abteilung</label>
+        <select name="abteilung" id="abteilung">
+            <option value="Einkauf">Einkauf</option>
+            <option value="Verwaltung">Verwaltung</option>
+            <option value="Logistik">Logistik</option>
+        </select>
+        <input type="text" name="auswahl" id="auswahl" value="abteilung" hidden>
+        <input type="submit" value="Nach Abteilung selektieren">
+    </form>
+
+    <form action="../php/mitarbeiterAnzeigen.php" method="post">
+        <label for="eintritt">Betriebszugehörigkeit</label>
+        <label for="von">Von:</label>
+        <input type="date" name="von" id="von">
+        <label for="bis">Bis: </label>
+        <input type="date" name="bis" id="bis">
+        <input type="text" name="auswahl" id="auswahl" value="eintritt" hidden>
+        <input type="submit" value="Nach Datum selektieren">
+    </form>
+
+    <!-- weiteres Formular .... alle Selektionsmöglichkeiten -->
+    <form action="../php/mitarbeiterAnzeigen.php" method="post">
+        <label for="standort">Standort</label>
+        <select name="standort" id="standort">
+            <option value="Saarbrücken">Saarbrücken</option>
+            <option value="Heidelberg">Heidelberg</option>
+            <option value="Marburg">Marburg</option>
+        </select>
+        <label for="abteilung">Abteilung</label>
+        <select name="abteilung" id="abteilung">
+            <option value="Einkauf">Einkauf</option>
+            <option value="Verwaltung">Verwaltung</option>
+            <option value="Logistik">Logistik</option>
+        </select>
+        <label for="eintritt">Betriebszugehörigkeit</label>
+        <label for="von">Von:</label>
+        <input type="date" name="von" id="von">
+        <label for="bis">Bis: </label>
+        <input type="date" name="bis" id="bis">
+        <input type="text" name="auswahl" id="auswahl" value="kombination" hidden>
+        <input type="submit" value="Mitarbeiterselektieren">
+    </form>
+</body>
+</html>

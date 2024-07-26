@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>s
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitarbeiter Anlegen</title>
+    <link rel="stylesheet" href="../css/mitarbeiter.css">
+</head>
+<body>
+    <form action="../php/mitarbeiterAnlegen.php" method="post">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required>
+        <label for="vorname">Vorname: </label>
+        <input type="text" name="vorname" id="vorname">
+        <label for="mail">Mailadresse:</label>
+        <input type="email" name="mail" id="mail">
+        <label for="abteilung">Abteilung:</label>
+        <select name="abteilung" id="abteilung">
+            <option value="Einkauf">Einkauf</option>
+            <option value="Verwaltung">Verwaltung</option>
+            <option value="Logistik">Logistik</option>
+        </select>
+        <label for="standort">Standort:</label>
+        <select name="standort" id="standort">
+            <option value="Saarbrücken">Saarbrücken</option>
+            <option value="Heidelberg">Heidelberg</option>
+            <option value="Marburg">Marburg</option>
+        </select>
+        <label for="eintritt">Eintritssdatum:</label>
+        <input type="date" name="eintritt" id="eintritt">
+        <br><br>
+        <input type="submit" value="Mitarbeiter anlegen">
+    </form>
+</body>
+</html>
